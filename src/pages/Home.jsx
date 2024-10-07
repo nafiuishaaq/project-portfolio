@@ -4,6 +4,37 @@ import hero from "../assets/hero-home.svg";
 import chikun from "../assets/chikun.svg";
 import balewa from "../assets/balewa.svg";
 import degel from "../assets/degel.svg";
+import Services from "../components/Services";
+import build from "../assets/building.svg";
+import consult from "../assets/consult.svg";
+import design from "../assets/design.svg";
+
+const serviceData = [
+  {
+    image: build,
+    title: "Building and Civil Engineering Contractor`",
+    body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
+    button: "Learn More",
+  },
+  {
+    image: consult,
+    title: "Building and Civil Engineering Contractor`",
+    body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
+    button: "Learn More",
+  },
+  {
+    image: design,
+    title: "Building and Civil Engineering Contractor`",
+    body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
+    button: "Learn More",
+  },
+  {
+    image: build,
+    title: "Building and Civil Engineering Contractor`",
+    body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
+    button: "Learn More",
+  },
+];
 
 const Home = () => {
   return (
@@ -11,8 +42,8 @@ const Home = () => {
       <Header />
       <div>
         <img class="relative" src={hero} alt="" />
-        <div class="absolute bottom-[-130px] left-0 top-4/4 w-3/5 ">
-          <h1 class="text-white ml-[100px] text-6xl font-bold leading-[70px]">
+        <div class="absolute bottom-[350px] md:bottom-[-130px] left-0 top-4/4 w-3/5 md:w-3/5 ">
+          <h1 class="text-white ml-[20px] md:ml-[100px] text-1xl md:text-6xl font-bold md:leading-[70px]">
             Embracing Tradition, Building the future.
           </h1>
         </div>
@@ -73,8 +104,8 @@ const Home = () => {
           </svg>
         </div> */}
 
-        <div class="absolute -top-8 left-0 right-0 -mt-8 flex">
-          <div class="bg-[red] w-40 h-40 rounded-full"></div>
+        <div class="absolute left-0 right-0 -mt-8 flex">
+          <div class="bg-[red] w-80 h-80 rounded-full z-0"></div>
           <div class="bg-[#062b26] w-80 h-80 rounded-full z-1"></div>
           <div class="bg-[#062b26] w-80 h-80 rounded-full z-2"></div>
           <div class="bg-[#062b26] w-80 h-80 rounded-full z-3"></div>
@@ -141,6 +172,22 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="h-screen p-14">
+        <div className="mb-10">
+          <h1 className="text-[40px] md:text-[60px] my-3">Our Services</h1>
+          <p className="md:w-2/4 text-[25px]">
+            We have a well-defined team of experts with vast experience in
+            handling multidisciplinary projects.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {serviceData.map((service, index) => (
+            <Services service={service} key={index} />
+          ))}
         </div>
       </div>
     </div>
