@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import build from "../assets/building.svg";
 import consult from "../assets/consult.svg";
 import design from "../assets/design.svg";
+import svg from "../assets/Frame.svg";
 
 const serviceData = [
   {
@@ -38,7 +39,7 @@ const serviceData = [
 
 const Home = () => {
   return (
-    <div class="w-screen">
+    <div>
       <Header />
       <div>
         <img class="relative" src={hero} alt="" />
@@ -49,7 +50,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-between p-14 gap-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-between p-14 gap-10">
         <p class="text-[22px]">
           Vernacular Build Limited (VBL) redefines the essence of Building
           Construction and Civil Engineering Infrastructure by recognising the
@@ -64,10 +65,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="p-14 h-screen">
-        <h1 className="text-[60px] my-3">Why VBL?</h1>
+      <div className="px-14 pt-2 pb-40">
+        <h1 className="text-[40px] md:text-[60px] mb-3">Why VBL?</h1>
 
-        <div class="w-3/4 text-[25px]">
+        <div class="md:w-4/5 w-full text-[25px]">
           <p class="weight-[400] italic">
             At Vernacular Build Limited, we're driven to expand our influence in
             the Building Construction and Engineering sphere. Our exceptional
@@ -104,17 +105,18 @@ const Home = () => {
           </svg>
         </div> */}
 
-        <div class="absolute left-0 right-0 -mt-8 flex">
-          <div class="bg-[red] w-80 h-80 rounded-full z-0"></div>
-          <div class="bg-[#062b26] w-80 h-80 rounded-full z-1"></div>
-          <div class="bg-[#062b26] w-80 h-80 rounded-full z-2"></div>
-          <div class="bg-[#062b26] w-80 h-80 rounded-full z-3"></div>
-          <div class="bg-[#062b26] w-80 h-80 rounded-full z-4"></div>
-          <div class="bg-[#062b26] w-80 h-80 rounded-full z-6"></div>
+        <div class="absolute md:-top-6 -top-3 lg:-top-9 flex">
+          <img className="w-full h-auto" src={svg} alt="" />
+          {/* <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
+          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
+          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
+          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
+          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
+          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div> */}
         </div>
 
         {/* <!-- Projects Section --> */}
-        <div class="bg-[#062b26] p-12 ">
+        <div class="bg-[#003328] p-12">
           <div class="container mx-auto text-white px-4">
             {/* <!-- Title --> */}
             <h2 class="text-4xl font-bold mb-2">Projects</h2>
