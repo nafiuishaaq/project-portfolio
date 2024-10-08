@@ -41,16 +41,18 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <div>
-        <img class="relative" src={hero} alt="" />
-        <div class="absolute bottom-[350px] md:bottom-[-130px] left-0 top-4/4 w-3/5 md:w-3/5 ">
-          <h1 class="text-white ml-[20px] md:ml-[100px] text-1xl md:text-6xl font-bold md:leading-[70px]">
-            Embracing Tradition, Building the future.
-          </h1>
-        </div>
+      <div
+        class="relative h-screen bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${hero})`,
+        }}
+      >
+        <h1 class="absolute text-4xl ml-[1rem] top-[30rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
+          Embracing Tradition, Building the future.
+        </h1>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-between p-14 gap-10">
+      <div class="grid grid-cols-1 p-10 md:grid-cols-2 items-center justify-between md:p-14 gap-10">
         <p class="text-[22px]">
           Vernacular Build Limited (VBL) redefines the essence of Building
           Construction and Civil Engineering Infrastructure by recognising the
@@ -65,7 +67,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="px-14 pt-2 pb-40">
+      <div className="md:px-14 p-10 pt-2 pb-40">
         <h1 className="text-[40px] md:text-[60px] mb-3">Why VBL?</h1>
 
         <div class="md:w-4/5 w-full text-[25px]">
@@ -116,10 +118,10 @@ const Home = () => {
         </div>
 
         {/* <!-- Projects Section --> */}
-        <div class="bg-[#003328] p-12">
-          <div class="container mx-auto text-white px-4">
+        <div class="bg-[#003328]">
+          <div class="container text-white p-10 md:p-14">
             {/* <!-- Title --> */}
-            <h2 class="text-4xl font-bold mb-2">Projects</h2>
+            <h2 class="text-[40px] md:text-[60px] mb-3">Projects</h2>
             <p class="text-lg mb-8">Featured projects</p>
 
             {/* <!-- Project Grid --> */}
@@ -177,7 +179,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="h-screen p-14">
+      <div className="h-screen p-10 md:p-14">
         <div className="mb-10">
           <h1 className="text-[40px] md:text-[60px] my-3">Our Services</h1>
           <p className="md:w-2/4 text-[25px]">
