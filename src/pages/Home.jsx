@@ -9,38 +9,36 @@ import build from "../assets/building.svg";
 import consult from "../assets/consult.svg";
 import design from "../assets/design.svg";
 import svg from "../assets/Frame.svg";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const serviceData = [
   {
     image: build,
     title: "Building and Civil Engineering Contractor`",
     body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
-    button: "Learn More",
   },
   {
     image: consult,
     title: "Building and Civil Engineering Contractor`",
     body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
-    button: "Learn More",
   },
   {
     image: design,
     title: "Building and Civil Engineering Contractor`",
     body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
-    button: "Learn More",
   },
   {
     image: build,
     title: "Building and Civil Engineering Contractor`",
     body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
-    button: "Learn More",
   },
 ];
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Header textColor="text-gray-500" />
       <div
         class="relative h-screen bg-cover bg-center"
         style={{
@@ -107,14 +105,8 @@ const Home = () => {
           </svg>
         </div> */}
 
-        <div class="absolute md:-top-6 -top-3 lg:-top-9 flex">
+        <div class="absolute md:-top-6 -top-3 lg:-top-9">
           <img className="w-full h-auto" src={svg} alt="" />
-          {/* <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
-          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
-          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
-          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
-          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div>
-          <div class="bg-[#062b26] w-20 h-20 md:w-60 md:h-60 rounded-full"></div> */}
         </div>
 
         {/* <!-- Projects Section --> */}
@@ -179,7 +171,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="h-screen p-10 md:p-14">
+      <div className="p-10 md:p-14">
         <div className="mb-10">
           <h1 className="text-[40px] md:text-[60px] my-3">Our Services</h1>
           <p className="md:w-2/4 text-[25px]">
@@ -194,6 +186,10 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      <Contact />
+
+      <Footer />
     </div>
   );
 };
