@@ -10,7 +10,7 @@ export default function Breadcrumb() {
   return (
     <nav
       aria-label="Breadcrumb"
-      className="flex absolute text-4xl ml-[1rem] top-[30rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[28rem] lg:w-3/5"
+      className="flex absolute text-4xl ml-[1rem] top-[34rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[28rem] lg:w-3/5"
     >
       <ol role="list" className="flex items-center space-x-4">
         <li>
@@ -31,7 +31,7 @@ export default function Breadcrumb() {
               <a
                 href={page.href}
                 aria-current={page.current ? "page" : undefined}
-                className="ml-4 text-sm font-medium text-[#F1ACA5] hover:text-gray-200"
+                className="ml-4 text-2xl font-medium text-[#F1ACA5] hover:text-gray-200"
               >
                 {page.name}
               </a>

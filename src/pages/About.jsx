@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-// import Hero from "../components/Hero";
 import abouthero from "../assets/about.png";
 import Breadcrumb from "../components/Breadcrumb";
 import { Link } from "react-router-dom";
@@ -17,14 +16,14 @@ const About = () => {
       >
         <Header bgColor="bg-transparent" hoverText="text-red-300" />
 
-        <h1 className="absolute text-6xl ml-[1rem] top-[23rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[17rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
+        <h1 className="absolute text-5xl ml-[1rem] top-[30rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[17rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
           About VBL
         </h1>
       </div>
       <Breadcrumb />
 
-      <div className=" md:grid grid-cols-2 px-14 py-20">
-        <div className="flex flex-col gap-4 font-semibold">
+      <div className=" md:grid grid-cols-2 px-10 lg:px-14 py-20">
+        <div className="flex flex-col gap-4 font-semibold mb-10">
           <Link>About VBL</Link>
           <Link>Mission & Vision</Link>
           <Link>Our Core Values</Link>
@@ -32,7 +31,7 @@ const About = () => {
 
         <div>
           <div className="mb-20">
-            <h1 className="font-semibold text-3xl w-2/4 mb-8">
+            <h1 className="font-semibold text-3xl md:w-2/4 mb-8">
               Embracing Tradition, Building the future.
             </h1>
 

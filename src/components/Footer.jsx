@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/LogoWhite.svg";
 import svg from "../assets/Frame.svg";
+import { RiFacebookCircleLine } from "react-icons/ri";
+import { FaWhatsapp } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -35,10 +39,10 @@ const Footer = () => {
           Reserved.
         </p>
         <div className="flex gap-5">
-          <p>f</p>
-          <p>w</p>
-          <p>x</p>
-          <p>i</p>
+          <RiFacebookCircleLine />
+          <FaWhatsapp />
+          <BsTwitterX />
+          <FaInstagram />
         </div>
       </div>
     </div>

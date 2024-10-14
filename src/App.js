@@ -2,8 +2,6 @@ import "./App.css";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Services from "./pages/Services";
-import Portfolio from "./pages/Portfolio";
 import PortfolioLayout from "./appLayouts/PortfolioLayout";
 import AllProjectList from "./portfolio/AllProjectList";
 import ServicesLayout from "./appLayouts/ServicesLayout";

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PortfolioNav = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-5">
-      <div className="text-[#363636] text-[24px] font-semibold">
+      <div className="text-[#363636] text-[24px] font-semibold mt-10">
         Projects Portfolio
       </div>
 
