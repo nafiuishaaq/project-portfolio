@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="text-white bg-[#003328] relative">
-      <div class="absolute md:-top-6 -top-3 lg:-top-9">
+      <div className="absolute md:-top-6 -top-3 lg:-top-9">
         <img className="w-full h-auto" src={svg} alt="" />
       </div>
 

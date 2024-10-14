@@ -9,6 +9,7 @@ import BuildingPage from "./services/BuildingPage";
 import ConsultancyPage from "./services/ConsultancyPage";
 import ConstructionPage from "./services/ConstructionPage";
 import ProjectPage from "./services/ProjectPage";
+import ResidentialPage from "./portfolio/ResidentialPage";
 
 const router = createBrowserRouter([
   {
@@ -28,12 +29,12 @@ const router = createBrowserRouter([
         element: <AllProjectList />,
       },
       {
-        path: "/portfolio/residential",
-        element: <AllProjectList />,
+        path: "residential",
+        element: <ResidentialPage />,
       },
       {
-        path: "/portfolio/commercial",
-        element: <AllProjectList />,
+        path: "commercial",
+        element: <ResidentialPage />,
       },
     ],
   },
@@ -46,15 +47,15 @@ const router = createBrowserRouter([
         element: <BuildingPage />,
       },
       {
-        path: "/services/consultancy",
+        path: "consultancy",
         element: <ConsultancyPage />,
       },
       {
-        path: "/services/construction",
+        path: "construction",
         element: <ConstructionPage />,
       },
       {
-        path: "/services/project",
+        path: "project",
         element: <ProjectPage />,
       },
     ],

@@ -40,18 +40,19 @@ const Home = () => {
     <div>
       <Header textColor="text-gray-500" />
       <div
-        class="relative h-screen bg-cover bg-center"
+        className="relative h-screen bg-cover bg-center"
         style={{
           backgroundImage: `url(${hero})`,
+          linearGradient: "rgba(0, 0, 0, 0.8)",
         }}
       >
-        <h1 class="absolute text-5xl ml-[1rem] top-[22rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
+        <h1 className="absolute text-5xl ml-[1rem] top-[22rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
           Embracing Tradition, Building the future.
         </h1>
       </div>
 
-      <div class="grid grid-cols-1 p-10 md:grid-cols-2 items-center justify-between md:p-14 gap-10">
-        <p class="text-[22px]">
+      <div className="grid grid-cols-1 p-10 md:grid-cols-2 items-center justify-between md:p-14 gap-10">
+        <p className="text-[22px]">
           Vernacular Build Limited (VBL) redefines the essence of Building
           Construction and Civil Engineering Infrastructure by recognising the
           interconnectedness of Architecture, Construction, the Environment, and
@@ -60,16 +61,16 @@ const Home = () => {
           environment and promoting sustainable construction practices.
         </p>
 
-        <div class="flex justify-center">
-          <div class="bg-[#221314] w-full h-64"></div>
+        <div className="flex justify-center">
+          <div className="bg-[#221314] w-full h-64"></div>
         </div>
       </div>
 
       <div className="md:px-14 p-10 pt-2 pb-40">
         <h1 className="text-[40px] md:text-[60px] mb-3">Why VBL?</h1>
 
-        <div class="md:w-4/5 w-full text-[25px]">
-          <p class="weight-[400] italic">
+        <div className="md:w-4/5 w-full text-[25px]">
+          <p className="weight-[400] italic">
             At Vernacular Build Limited, we're driven to expand our influence in
             the Building Construction and Engineering sphere. Our exceptional
             approach and ideas transcend borders, incorporating unique cultural
@@ -93,73 +94,62 @@ const Home = () => {
         <div className="absolute bottom-[5rem] left-[103rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div> */}
       </div>
 
-      <div class="relative">
-        {/* <!-- Curved Shape (using SVG) --> */}
-        {/* <div class="absolute top-0 left-0 right-0 -mt-20">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-              fill="#062b26"
-              fill-opacity="1"
-              d="M0,288L1440,192L1440,320L0,320Z"
-            ></path>
-          </svg>
-        </div> */}
-
-        <div class="absolute md:-top-6 -top-3 lg:-top-9">
+      <div className="relative">
+        <div className="absolute md:-top-6 -top-3 lg:-top-9">
           <img className="w-full h-auto" src={svg} alt="" />
         </div>
 
         {/* <!-- Projects Section --> */}
-        <div class="bg-[#003328]">
-          <div class="container text-white p-10 md:p-14">
+        <div className="bg-[#003328]">
+          <div className="container text-white p-10 md:p-14">
             {/* <!-- Title --> */}
-            <h2 class="text-[40px] md:text-[60px] mb-3">Projects</h2>
-            <p class="text-lg mb-8">Featured projects</p>
+            <h2 className="text-[40px] md:text-[60px] mb-3">Projects</h2>
+            <p className="text-lg mb-8">Featured projects</p>
 
             {/* <!-- Project Grid --> */}
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* <!-- Large Project on the left --> */}
-              <div class="lg:col-span-2 relative">
+              <div className="lg:col-span-2 relative">
                 <img
                   src={balewa}
                   alt="Residential Development"
-                  class="w-full h-full object-cover"
+                  className="w-full h-full object-cover"
                 />
                 {/* <!-- Overlay Text --> */}
-                <div class="absolute bottom-4 left-4 text-white">
-                  <h3 class="text-xl font-bold">
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">
                     Residential Development along Tafawa Balewa Way Kaduna
                   </h3>
                   <p>Renovation • Kaduna</p>
                 </div>
               </div>
               {/* <!-- Two Small Projects on the right --> */}
-              <div class="grid grid-rows-2 gap-8">
+              <div className="grid grid-rows-2 gap-8">
                 {/* <!-- Project 2 --> */}
-                <div class="relative">
+                <div className="relative">
                   <img
                     src={degel}
                     alt="Residential Development at Degel Road, Kaduna"
-                    class="w-full h-full object-cover"
+                    className="w-full h-full object-cover"
                   />
                   {/* <!-- Overlay Text --> */}
-                  <div class="absolute bottom-4 left-4 text-white">
-                    <h3 class="text-xl font-bold">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">
                       Residential Development at Degel Road, Kaduna
                     </h3>
                     <p>Design & Construction • Kaduna</p>
                   </div>
                 </div>
                 {/* <!-- Project 3 --> */}
-                <div class="relative">
+                <div className="relative">
                   <img
                     src={chikun}
                     alt="Proposed Construction of Rigachikun Market"
-                    class="w-full h-full object-cover"
+                    className="w-full h-full object-cover"
                   />
                   {/* <!-- Overlay Text --> */}
-                  <div class="absolute bottom-4 left-4 text-white">
-                    <h3 class="text-xl font-bold">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">
                       Proposed Construction of Rigachikun Market
                     </h3>
                     <p>Consultancy Services • Kaduna</p>

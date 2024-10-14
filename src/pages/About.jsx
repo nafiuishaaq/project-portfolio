@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="relative">
       <div
-        class="relative h-screen bg-cover bg-center"
+        className="relative h-screen bg-cover bg-center"
         style={{
           backgroundImage: `url(${abouthero})`,
         }}

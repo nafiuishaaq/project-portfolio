@@ -4,7 +4,7 @@ import ServicesNav from "../components/ServicesNav";
 
 const ConsultancyPage = () => {
   return (
-    <div className=" md:grid grid-cols-2 px-14 py-20">
+    <div className=" md:grid grid-cols-2 px-10 md:px-14 py-20">
       <ServicesNav />
       <div>
         <div className="mb-20">
