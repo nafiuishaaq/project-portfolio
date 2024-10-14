@@ -31,7 +31,7 @@ export default function Breadcrumb() {
               <a
                 href={page.href}
                 aria-current={page.current ? "page" : undefined}
-                className="ml-4 text-sm font-medium text-white hover:text-gray-200"
+                className="ml-4 text-sm font-medium text-[#F1ACA5] hover:text-gray-200"
               >
                 {page.name}
               </a>

@@ -45,7 +45,7 @@ const Home = () => {
           backgroundImage: `url(${hero})`,
         }}
       >
-        <h1 class="absolute text-4xl ml-[1rem] top-[30rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
+        <h1 class="absolute text-5xl ml-[1rem] top-[22rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
           Embracing Tradition, Building the future.
         </h1>
       </div>

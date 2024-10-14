@@ -4,6 +4,13 @@ import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
+import PortfolioLayout from "./appLayouts/PortfolioLayout";
+import AllProjectList from "./portfolio/AllProjectList";
+import ServicesLayout from "./appLayouts/ServicesLayout";
+import BuildingPage from "./services/BuildingPage";
+import ConsultancyPage from "./services/ConsultancyPage";
+import ConstructionPage from "./services/ConstructionPage";
+import ProjectPage from "./services/ProjectPage";
 
 const router = createBrowserRouter([
   {
@@ -15,12 +22,44 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/services",
-    element: <Services />,
+    path: "/portfolio",
+    element: <PortfolioLayout />,
+    children: [
+      {
+        index: true,
+        element: <AllProjectList />,
+      },
+      {
+        path: "/portfolio/residential",
+        element: <AllProjectList />,
+      },
+      {
+        path: "/portfolio/commercial",
+        element: <AllProjectList />,
+      },
+    ],
   },
   {
-    path: "/portfolio",
-    element: <Portfolio />,
+    path: "/services",
+    element: <ServicesLayout />,
+    children: [
+      {
+        index: true,
+        element: <BuildingPage />,
+      },
+      {
+        path: "/services/consultancy",
+        element: <ConsultancyPage />,
+      },
+      {
+        path: "/services/construction",
+        element: <ConstructionPage />,
+      },
+      {
+        path: "/services/project",
+        element: <ProjectPage />,
+      },
+    ],
   },
 ]);
 

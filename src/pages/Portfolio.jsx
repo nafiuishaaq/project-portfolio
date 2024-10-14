@@ -2,6 +2,9 @@ import React from "react";
 import Header from "../components/Header";
 import abouthero from "../assets/about.png";
 import Breadcrumb from "../components/Breadcrumb";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+import AllProjectList from "../portfolio/AllProjectList";
 
 const Portfolio = () => {
   return (
@@ -19,6 +22,22 @@ const Portfolio = () => {
         </h1>
       </div>
       <Breadcrumb />
+
+      <div className="text-center pt-10 text-[#363636] text-[24px] font-semibold">
+        Projects Portfolio
+      </div>
+
+      <div className="px-14 pt-10">
+        <div className="flex justify-center gap-3">
+          <Link className="text-[#376B65] border-b-2">All</Link>
+          <Link>Residential</Link>
+          <Link>Commercial</Link>
+        </div>
+
+        <AllProjectList />
+      </div>
+
+      <Footer />
     </div>
   );
 };
