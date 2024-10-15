@@ -43,9 +43,16 @@ const Home = () => {
         className="relative h-screen bg-cover bg-center"
         style={{
           backgroundImage: `url(${hero})`,
-          linearGradient: "rgba(0, 0, 0, 0.8)",
+          background: "linear-gradient: (#e66465, #9198e5)",
         }}
       >
+        <div
+          style={{
+            background:
+              "linear-gradient(to bottom,  rgba(0, 0, 0, 0.05), #000000",
+          }}
+          className="absolute bg-black bg-opacity-70 w-full h-[70%] bottom-0 z-1"
+        ></div>
         <h1 className="absolute text-5xl ml-[1rem] top-[22rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
           Embracing Tradition, Building the future.
         </h1>
@@ -79,19 +86,6 @@ const Home = () => {
             construction niche.
           </p>
         </div>
-
-        {/* <div className="absolute bottom-[5rem] -left-[10rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[3rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[13rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[23rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[33rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[43rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[53rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[63rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[73rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[83rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[93rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div>
-        <div className="absolute bottom-[5rem] left-[103rem] w-[20rem] h-[20rem] rounded-full bg-[#062b26] z-20"></div> */}
       </div>
 
       <div className="relative">
@@ -115,6 +109,13 @@ const Home = () => {
                   alt="Residential Development"
                   className="w-full h-full object-cover"
                 />
+                <div
+                  style={{
+                    background:
+                      "linear-gradient(to bottom,  rgba(0, 0, 0, 0.05), #000000",
+                  }}
+                  className="absolute bg-black bg-opacity-70 w-full h-[50%] bottom-0 z-1"
+                ></div>
                 {/* <!-- Overlay Text --> */}
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-xl font-bold">
@@ -132,6 +133,13 @@ const Home = () => {
                     alt="Residential Development at Degel Road, Kaduna"
                     className="w-full h-full object-cover"
                   />
+                  <div
+                    style={{
+                      background:
+                        "linear-gradient(to bottom,  rgba(0, 0, 0, 0.05), #000000",
+                    }}
+                    className="absolute bg-black bg-opacity-70 w-full h-[50%] bottom-0 z-1"
+                  ></div>
                   {/* <!-- Overlay Text --> */}
                   <div className="absolute bottom-4 left-4 text-white">
                     <h3 className="text-xl font-bold">
@@ -147,6 +155,13 @@ const Home = () => {
                     alt="Proposed Construction of Rigachikun Market"
                     className="w-full h-full object-cover"
                   />
+                  <div
+                    style={{
+                      background:
+                        "linear-gradient(to bottom,  rgba(0, 0, 0, 0.05), #000000",
+                    }}
+                    className="absolute bg-black bg-opacity-70 w-full h-[70%] bottom-0 z-1"
+                  ></div>
                   {/* <!-- Overlay Text --> */}
                   <div className="absolute bottom-4 left-4 text-white">
                     <h3 className="text-xl font-bold">

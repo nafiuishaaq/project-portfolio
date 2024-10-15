@@ -33,34 +33,44 @@ const Hero = () => {
   };
 
   return (
-    <div>
-      <div
-        className="relative h-screen bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${getHeroImage()})`,
-        }}
-      >
-        <Header bgColor="bg-transparent" hoverText="text-red-300" />
+    <div className=" z-1000">
+      <div>
+        <div
+          className="relative h-screen bg-cover bg-center bg-blend-darken"
+          style={{
+            backgroundImage: `url(${getHeroImage()})`,
+          }}
+        >
+          {/* <div className="relative"></div> */}
+          <div
+            style={{
+              background:
+                "linear-gradient(to bottom,  rgba(0, 0, 0, 0.05), #000000",
+            }}
+            className="absolute bg-black bg-opacity-70 w-full h-[70%] bottom-0 z-1"
+          ></div>
+          <Header bgColor="bg-transparent" hoverText="text-red-300" />
 
-        <h1 className="absolute text-5xl ml-[1rem] top-[20rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[13rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
-          {/* {location.pathname == "building" ? locationData["building"] : ""} */}
-          {location.pathname === "/portfolio"
-            ? locationData["portfolio"]
-            : location.pathname === "/portfolio/residential"
-            ? locationData["residential"]
-            : location.pathname === "/portfolio/commercial"
-            ? locationData["commercial"]
-            : location.pathname === "/services"
-            ? locationData["building"]
-            : location.pathname === "/services/consultancy"
-            ? locationData["consultancy"]
-            : location.pathname === "/services/construction"
-            ? locationData["construction"]
-            : location.pathname === "/services/project" &&
-              locationData["project"]}
-        </h1>
+          <h1 className="absolute text-4xl ml-[1rem] top-[20rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[13rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
+            {/* {location.pathname == "building" ? locationData["building"] : ""} */}
+            {location.pathname === "/portfolio"
+              ? locationData["portfolio"]
+              : location.pathname === "/portfolio/residential"
+              ? locationData["residential"]
+              : location.pathname === "/portfolio/commercial"
+              ? locationData["commercial"]
+              : location.pathname === "/services"
+              ? locationData["building"]
+              : location.pathname === "/services/consultancy"
+              ? locationData["consultancy"]
+              : location.pathname === "/services/construction"
+              ? locationData["construction"]
+              : location.pathname === "/services/project" &&
+                locationData["project"]}
+          </h1>
+        </div>
+        <Breadcrumb />
       </div>
-      <Breadcrumb />
     </div>
   );
 };
