@@ -17,21 +17,25 @@ const serviceData = [
     image: build,
     title: "Building and Civil Engineering Contractor`",
     body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
+    link: "/services",
   },
   {
     image: consult,
-    title: "Building and Civil Engineering Contractor`",
-    body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
+    title: "Consultancy Services",
+    body: "Consult with us for expert advice and innovative solutionst hroughout your project. Our dynamic and knowledgeable...",
+    link: "/services/consultancy",
   },
   {
     image: design,
-    title: "Building and Civil Engineering Contractor`",
-    body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
+    title: "Construction Designs",
+    body: "At VBL, we prioritize culturally diverse and modernistic designs that reflect your lifestyle, preferences, and culture.",
+    link: "/services/construction",
   },
   {
     image: build,
-    title: "Building and Civil Engineering Contractor`",
-    body: "VBL provides seamless realization of your vision throughour general contracting and consulting services",
+    title: "Project Management",
+    body: "At VBL, our dedicated project management team brings extensive expertise to oversee all aspects of your project....",
+    link: "/services/project",
   },
 ];
 
@@ -53,13 +57,13 @@ const Home = () => {
           }}
           className="absolute bg-black bg-opacity-70 w-full h-[70%] bottom-0 z-1"
         ></div>
-        <h1 className="absolute text-5xl ml-[1rem] top-[22rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
+        <h1 className="absolute text-5xl font-impara ml-[1rem] top-[22rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
           Embracing Tradition, Building the future.
         </h1>
       </div>
 
       <div className="grid grid-cols-1 p-10 md:grid-cols-2 items-center justify-between md:p-14 gap-10">
-        <p className="text-[22px]">
+        <p className="text-[22px] font-proxima">
           Vernacular Build Limited (VBL) redefines the essence of Building
           Construction and Civil Engineering Infrastructure by recognising the
           interconnectedness of Architecture, Construction, the Environment, and
@@ -74,10 +78,12 @@ const Home = () => {
       </div>
 
       <div className="md:px-14 p-10 pt-2 pb-40">
-        <h1 className="text-[40px] md:text-[60px] mb-3">Why VBL?</h1>
+        <h1 className="text-[40px] md:text-[60px] mb-3 font-impara">
+          Why VBL?
+        </h1>
 
         <div className="md:w-4/5 w-full text-[25px]">
-          <p className="weight-[400] italic">
+          <p className="weight-[400] italic font-proxima">
             At Vernacular Build Limited, we're driven to expand our influence in
             the Building Construction and Engineering sphere. Our exceptional
             approach and ideas transcend borders, incorporating unique cultural
@@ -97,8 +103,10 @@ const Home = () => {
         <div className="bg-[#003328]">
           <div className="container text-white p-10 md:p-14">
             {/* <!-- Title --> */}
-            <h2 className="text-[40px] md:text-[60px] mb-3">Projects</h2>
-            <p className="text-lg mb-8">Featured projects</p>
+            <h2 className="text-[40px] md:text-[60px] mb-3 font-impara">
+              Projects
+            </h2>
+            <p className="text-lg mb-8 font-proxima">Featured projects</p>
 
             {/* <!-- Project Grid --> */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -118,10 +126,10 @@ const Home = () => {
                 ></div>
                 {/* <!-- Overlay Text --> */}
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">
+                  <h3 className="text-xl font-bold font-proxima">
                     Residential Development along Tafawa Balewa Way Kaduna
                   </h3>
-                  <p>Renovation • Kaduna</p>
+                  <p className="font-proxima">Renovation • Kaduna</p>
                 </div>
               </div>
               {/* <!-- Two Small Projects on the right --> */}
@@ -142,10 +150,12 @@ const Home = () => {
                   ></div>
                   {/* <!-- Overlay Text --> */}
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-xl font-bold">
+                    <h3 className="text-xl font-bold font-proxima">
                       Residential Development at Degel Road, Kaduna
                     </h3>
-                    <p>Design & Construction • Kaduna</p>
+                    <p className="font-proxima">
+                      Design & Construction • Kaduna
+                    </p>
                   </div>
                 </div>
                 {/* <!-- Project 3 --> */}
@@ -164,10 +174,12 @@ const Home = () => {
                   ></div>
                   {/* <!-- Overlay Text --> */}
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-xl font-bold">
+                    <h3 className="text-xl font-bold font-proxima">
                       Proposed Construction of Rigachikun Market
                     </h3>
-                    <p>Consultancy Services • Kaduna</p>
+                    <p className="font-proxima">
+                      Consultancy Services • Kaduna
+                    </p>
                   </div>
                 </div>
               </div>
@@ -178,8 +190,10 @@ const Home = () => {
 
       <div className="p-10 md:p-14">
         <div className="mb-10">
-          <h1 className="text-[40px] md:text-[60px] my-3">Our Services</h1>
-          <p className="md:w-2/4 text-[25px]">
+          <h1 className="text-[40px] md:text-[60px] my-3 font-impara">
+            Our Services
+          </h1>
+          <p className="md:w-2/4 text-[25px] font-proxima">
             We have a well-defined team of experts with vast experience in
             handling multidisciplinary projects.
           </p>

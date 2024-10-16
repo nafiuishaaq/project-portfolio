@@ -5,6 +5,8 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaRegEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,24 +19,36 @@ const Footer = () => {
         <img className="pb-10" src={logo} alt="" />
         <span className="grid grid-cols-2 md:justify-between">
           <div className="grid">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/services">Service</Link>
+            <Link to="/" className="font-proxima">
+              Home
+            </Link>
+            <Link to="/about" className="font-proxima">
+              About
+            </Link>
+            <Link to="/portfolio" className="font-proxima">
+              Portfolio
+            </Link>
+            <Link to="/services" className="font-proxima">
+              Service
+            </Link>
           </div>
           <div>
-            <p>+234 703 164 4355</p>
-            <p>
+            <p className="font-proxima mb-5 flex items-center gap-3">
+              <FaPhoneAlt /> +234 703 164 4355
+            </p>
+            <p className="font-proxima mb-5">
               CA 12 & 13 Apo Spark Light Mall, Opposite Living Faith Church,
               Durumi, Abuja, FCT, Nigeria
             </p>
-            <p>info@vblng.com</p>
+            <p className="font-proxima flex items-center gap-3">
+              <FaRegEnvelope /> info@vblng.com
+            </p>
           </div>
         </span>
       </div>
       <div className="border-b-[1px] w-full"></div>
       <div className="flex gap-4 justify-between flex-col-reverse md:flex-row p-6 px-10 lg:px-40 pb-16">
-        <p className="text-center">
+        <p className="text-center font-proxima">
           © {new Date().getFullYear()} Vernacular Build Limited. All Rights
           Reserved.
         </p>

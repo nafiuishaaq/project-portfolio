@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "impara";
+  src: url("./assets/fonts/impara-free-font/Impara-Regular.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima";
+  src: url("./assets/fonts/proxima-nova/Proxima\ Nova\ Regular.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
