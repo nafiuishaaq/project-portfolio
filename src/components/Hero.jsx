@@ -47,7 +47,7 @@ const Hero = () => {
               background:
                 "linear-gradient(to bottom,  rgba(0, 0, 0, 0.05), #000000",
             }}
-            className="absolute bg-black bg-opacity-70 w-full h-[70%] bottom-0 z-1"
+            className="absolute bg-black bg-opacity-70 w-full h-[100%] bottom-0 z-1"
           ></div>
           <Header bgColor="bg-transparent" hoverText="text-red-300" />
 

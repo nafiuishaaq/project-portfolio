@@ -1,12 +1,13 @@
 import { HomeIcon } from "@heroicons/react/20/solid";
 import { GoDotFill } from "react-icons/go";
-
-const pages = [
-  { name: "Projects", href: "#", current: false },
-  //   { name: "Project Nero", href: "#", current: true },
-];
+import { useLocation } from "react-router-dom";
 
 export default function Breadcrumb() {
+  const location = useLocation();
+
+  const currentPage = location.pathname.split("/");
+  // console.log(currentPage);
+
   return (
     <nav
       aria-label="Breadcrumb"
@@ -21,23 +22,35 @@ export default function Breadcrumb() {
             </a>
           </div>
         </li>
-        {pages.map((page) => (
-          <li key={page.name}>
-            <div className="flex items-center">
-              <GoDotFill
-                aria-hidden="true"
-                className="h-3 w-3 flex-shrink-0 text-white"
-              />
-              <a
-                href={page.href}
-                aria-current={page.current ? "page" : undefined}
-                className="ml-4 text-2xl font-medium text-[#F1ACA5] hover:text-gray-200"
-              >
-                {page.name}
-              </a>
-            </div>
-          </li>
-        ))}
+        <li>
+          <div className="flex items-center gap-2">
+            <GoDotFill
+              aria-hidden="true"
+              className="h-3 w-3 flex-shrink-0 text-white"
+            />
+            <a
+              href="#"
+              className="ml-2 text-2xl font-medium text-[#F1ACA5] hover:text-gray-200"
+            >
+              {currentPage[1]}
+            </a>
+            {currentPage[2] && (
+              <>
+                <GoDotFill
+                  aria-hidden="true"
+                  className="h-3 w-3 flex-shrink-0 text-white"
+                />
+                <a
+                  href="#"
+                  className="ml-4 text-2xl font-medium text-[#F1ACA5] hover:text-gray-200"
+                >
+                  {currentPage[2]}
+                </a>
+              </>
+            )}
+          </div>
+        </li>
+        {/* ))} */}
       </ol>
     </nav>
   );

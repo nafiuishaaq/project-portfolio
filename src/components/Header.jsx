@@ -27,7 +27,7 @@ export default function Header({
 
   return (
     <Disclosure as="nav" className={`${bgColor} shadow`}>
-      <div className="mx-auto max-w-7xl sm:px-6 md:px-30 py-2 md:py-5">
+      <div className="mx-auto max-w-7xl sm:px-6 md:px-40 py-2 md:py-5">
         <div className="relative flex h-16 justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
