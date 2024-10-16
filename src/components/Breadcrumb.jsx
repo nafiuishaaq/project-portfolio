@@ -30,7 +30,7 @@ export default function Breadcrumb() {
             />
             <a
               href="#"
-              className="ml-2 text-2xl font-medium text-[#F1ACA5] hover:text-gray-200"
+              className="ml-2 text-2xl font-medium text-white hover:text-gray-200"
             >
               {currentPage[1]}
             </a>

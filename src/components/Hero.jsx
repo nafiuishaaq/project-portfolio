@@ -33,7 +33,7 @@ const Hero = () => {
   };
 
   return (
-    <div className=" z-1000">
+    <div>
       <div>
         <div
           className="relative h-screen bg-cover bg-center bg-blend-darken"
@@ -47,7 +47,7 @@ const Hero = () => {
               background:
                 "linear-gradient(to bottom,  rgba(0, 0, 0, 0.05), #000000",
             }}
-            className="absolute bg-black bg-opacity-70 w-full h-[100%] bottom-0 z-1"
+            className="absolute bg-black bg-opacity-70 w-full h-[50%] bottom-0"
           ></div>
           <Header bgColor="bg-transparent" hoverText="text-red-300" />
 
