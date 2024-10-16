@@ -51,7 +51,7 @@ const Hero = () => {
           ></div>
           <Header bgColor="bg-transparent" hoverText="text-red-300" />
 
-          <h1 className="absolute text-4xl ml-[1rem] top-[20rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[13rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
+          <h1 className="absolute text-4xl font-impara ml-[1rem] top-[23rem] sm:text-8xl md:text-7xl md:top-[23rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[13rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
             {/* {location.pathname == "building" ? locationData["building"] : ""} */}
             {location.pathname === "/portfolio"
               ? locationData["portfolio"]

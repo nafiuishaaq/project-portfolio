@@ -57,7 +57,7 @@ const Home = () => {
           }}
           className="absolute bg-black bg-opacity-70 w-full h-[70%] bottom-0 z-1"
         ></div>
-        <h1 className="absolute text-5xl font-impara ml-[1rem] top-[22rem] sm:text-8xl md:text-7xl md:top-[42rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
+        <h1 className="absolute text-5xl font-impara ml-[1rem] top-[22rem] sm:text-8xl md:text-7xl md:top-[30rem] md:w-full md:ml-[2rem] lg:text-6xl lg:ml-20 lg:top-[22rem] lg:w-3/5 lg:leading-[70px]  font-bold text-white">
           Embracing Tradition, Building the future.
         </h1>
       </div>
